@@ -69,7 +69,7 @@ h6 {
 }
 
 a {
-  color: #82b641;
+  color: #d61a0d;
   transition: all 0.3s ease-in-out;
 }
 
@@ -140,8 +140,8 @@ strong { font-weight: 400; }
 
 .bttn {
   color: #FFFFFF;
-  background: #82b641;
-  border: 2px solid #82b641;
+  background: #d61a0d;
+  border: 2px solid #d61a0d;
   font-weight: 700;
   padding: .75em 1.5em;
   border-radius: 5px;
@@ -165,10 +165,10 @@ strong { font-weight: 400; }
   display: block;
 }
 
-.action-btn .bttn:last-child {
+.action-btn .bttn:last-child, .donate {
   margin-bottom: 0;
-  background: transparent;
-  border: 2px solid #fff;
+  background: #82b641;
+  border: 2px solid #82b641;
 }
 
 .action-btn .bttn:last-child:hover {
@@ -215,7 +215,7 @@ strong { font-weight: 400; }
 .navbar-default.stuck .navbar-nav>li>a { color: #777; }
 
 .navbar-default.stuck .navbar-nav > li > a:hover,
-.navbar-default.stuck .navbar-nav > li > a:focus { color: #82b641; }
+.navbar-default.stuck .navbar-nav > li > a:focus { color: #d61a0d; }
 
 .navbar-nav .bttn {
   display: none;
@@ -279,9 +279,8 @@ transform:translateY(0);
    4.about  
    ========================================================================== */
    
-
    
-.section-spacing { padding: 4.5em 0; }
+.section-spacing { padding: 2.5em 0; }
 
 .section-spacing header {
   position: relative;
@@ -291,7 +290,7 @@ transform:translateY(0);
 .section-spacing header h2 {
   margin-top: 0;
   font-size: 30px;
-  color: #101010;
+  color: #3b3b3b;
 }
 
 .section-spacing header h3 {
@@ -865,7 +864,7 @@ main.slide-out {
   top: 50%;
   height: 2px;
   width: 13px;
-  background: #82b641;
+  background: #d61a0d;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition-property: -webkit-transform;
@@ -1013,14 +1012,14 @@ main.slide-out {
  color: #ABABAB;
  font-weight: 300;
 }
- .form-control:-ms-input-placeholder {
+ .form-control:-ms-input-placeholder, value {
  color: #ABABAB;
  font-weight: 300;
 }
 
 .center-block { float: none; }
 
-.form-control {
+.form-control, select {
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid #fff;
   color: #333;
@@ -1030,7 +1029,7 @@ main.slide-out {
   padding: 0 1.5em 0 3em;
 }
 
-.form-control:focus {
+.form-control:focus, select{
   border-color: #fff;
   outline: 0;
   box-shadow: none;
@@ -1043,8 +1042,8 @@ main.slide-out {
 
 .btn-default {
   color: #fff;
-  background-color: #82b641;
-  border-color: #82b641;
+  background-color: #d61a0d;
+  border-color: #d61a0d;
   font-weight: 700;
   text-shadow: 0 1px rgba(0,0,0,0.1);
 }
@@ -1078,7 +1077,7 @@ main.slide-out {
 
 #contact-form > div[class*="for-user-"] > i,
 #mc-form i.fa-envelope-o {
-  color: #82b641;
+  color: #d61a0d;
   position: absolute;
   left: 1.15em;
   top: 21px;
@@ -1133,14 +1132,16 @@ main.slide-out {
    18.Contact
    ========================================================================== */
 
-.contact-form .form-control {
+.contact-form .form-control, select {
   border-color: #ddd;
   margin-bottom: 1.5em;
   box-shadow: none;
   padding: 1em 1.5em 1em 3em;
 }
+.contact-form h5{
+  text-align: left;
+}
 
-.contact-form .btn-default { width: 100%; }
 
 .contact-form label.error {
   margin-bottom: 1.5em;
@@ -1177,7 +1178,7 @@ main.slide-out {
 
 .error-cf p {
   background: #FFE5E5;
-  color: #ea5050;
+  color: #d61a0d;
   border: 1px solid rgba(169, 82, 82, 0.18);
 }
 
@@ -1185,19 +1186,19 @@ main.slide-out {
 .success-cf i,
 .error-cf i { padding-right: .5em; }
 
-.contact-form .form-control.error {
+.contact-form .form-control.error , select {
   border-color: #E7BEBE;
-  color: #D95C5C;
+  color: #d61a0d;
   border-left: none;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  box-shadow: .3em 0 0 0 #D95C5C inset;
+  box-shadow: .3em 0 0 0 #d61a0d inset;
   margin-bottom: .75em;
 }
 
 .contact-form .form-control.error:focus {
-  border-color: #ff5050;
-  color: #ff5050;
+  border-color: #d61a0d;
+  color: #d61a0d;
   box-shadow: .3em 0 0 0 #FF5050 inset;
 }
 
@@ -1248,9 +1249,9 @@ main.slide-out {
 }
 
 .site-footer .social li a {
-  color: #8ec150;
-  background: transparent;
-  border: 1px solid #8ec150;
+  color: #d61a0d;
+  background: #d61a0d;
+  border: 1px solid #d61a0d;
   width: 55px;
   height: 55px;
   line-height: 55px;
