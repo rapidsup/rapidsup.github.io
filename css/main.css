@@ -818,11 +818,7 @@ main.slide-out {
   padding: 0 .5em .5em;
 }
 
-.sponsor img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
-}
+
 
 .sponsor img:hover {
   -webkit-filter: grayscale(0);
@@ -834,8 +830,9 @@ main.slide-out {
    ========================================================================== */
    
 .about,
-.speaker,
+.donation,
 .faq,
+footer,
 .sub-form { background: #F7F7F7; }
 
 .cd-faq-group.selected { display: block; }
@@ -1271,7 +1268,7 @@ main.slide-out {
    
 @media (min-width: 768px) {
 
-.section-spacing { padding: 6em 0; }
+.section-spacing { padding: 3em 0; }
 
 .navbar-default {
   background-color: transparent;
