@@ -1,18 +1,6 @@
-
-/*
-Theme Name: Conference - Event CTA/Registration Landing Page
-Theme URI: http://csmthemes.com/themes/conference/
-Author: Pixininja
-Author URI: http://csmthemes.com/
-Description: Conference is a event call to action landing page. The main purpose of this page is to let users signup for the event.
-Version: 1.3
-*/
-
-
 /* ==========================================================================
    Table Of Content
    ========================================================================== 
-   
 1.General
 2.Hero section
 3.nav
@@ -34,12 +22,7 @@ Version: 1.3
 19.Social
 20.Small devices (tablets, 768px and up)
 21.Medium devices (desktops, 992px and up)
-
 */
-
-
-
-
 
 /* ==========================================================================
    1.General
@@ -280,7 +263,7 @@ transform:translateY(0);
    ========================================================================== */
    
    
-.section-spacing { padding: 2.5em 0; }
+.section-spacing { padding: 2.5em  0 15px 0; }
 
 .section-spacing header {
   position: relative;
@@ -301,176 +284,6 @@ transform:translateY(0);
 }
 
 .about .col-md-6 p:last-child { margin-bottom: 0; }
-
-/* ==========================================================================
-   5.counter
-   ========================================================================== */
-
-.counter {
-  padding: 4.5em 0;
-  position: relative;
-}
-
-.counter i { color: #82b641; }
-
-.counter p { margin-bottom: 0; }
-
-.counter div[class^="col-"]:nth-child(1),
-.counter div[class^="col-"]:nth-child(2) { padding-bottom: 1.5em; }
-
-/* ==========================================================================
-   6.schedule
-   ========================================================================== */
-   
-
-
-.timeline {
-  position: relative;
-  padding: 2.25em 3em;
-  border-left: 4px solid #82b641;
-  border-top: none;
-}
-
-.event p:first-of-type {
-  font-weight: 700;
-  color: #333;
-}
-
-.event .event-speaker {
-  font-style: italic;
-  text-align: right;
-}
-
-.timeline .event {
-  border-bottom: 1px dashed rgba(89, 89, 89, 0.14);
-  padding-bottom: 2.25em;
-  margin-bottom: 3em;
-  position: relative;
-}
-
-.timeline .event:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
-}
-
-.timeline .event:after {
-  position: absolute;
-  display: block;
-}
-
-.timeline .event:after {
-  box-shadow: 0 0 0 4px #82b641;
-  left: -55.85px;
-  background: #fff;
-  border-radius: 50%;
-  height: 11px;
-  width: 11px;
-  content: "";
-  top: 5px;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-tabs {
-  border-bottom: 1px solid #F7F7F7;
-  background: #F7F7F7;
-}
-
-.nav-tabs > li {
-  padding: .75em 0;
-  background: #F7F7F7;
-  float: none;
-  border-bottom: 2px solid #E8E8E8;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-tabs > li.active,
-.nav-tabs > li:hover,
-.nav-tabs > li:focus { background: #82b641; }
-
-.nav-tabs > li.active a,
-.nav-tabs > li:hover a,
-.nav-tabs > li:focus a { color: #fff; }
-
-.nav-tabs li:last-child { border-bottom: none; }
-
-.nav-tabs > li > a {
-  border: none;
-  color: #949494;
-}
-
-.nav-tabs > li i { padding-right: .5em; }
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-  border: none;
-  background-color: transparent;
-}
-
-.event img {
-  border-radius: 50%;
-  margin-bottom: 1.5em;
-}
-
-.nav-tabs a span { vertical-align: super; }
-
-/* ==========================================================================
-   7.speaker
-   ========================================================================== */
-   
-
-
-.event-speaker figure img {
-  border-radius: 4px;
-  transition: all 1s ease;
-}
-
-.nav>li>a { padding: 12px 16px; }
-
-.event-speaker h4 { margin: 24px 0 6px; }
-
-.event-speaker p { font-style: italic; }
-
-.event-speaker .social li a {
-  border: 1px solid #82b641;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-}
-
-.event-speaker .social li a:hover {
-  color: #fff;
-  background: #8ec150;
-  border: 1px solid #8ec150;
-}
-
-.event-speaker .bttn {
-  position: absolute;
-  left: 50%;
-  top: 57%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.owl-wrapper-outer { margin-bottom: 1.5em; }
-
-.speaker-slider .item { margin: 3px; }
-
-/* ==========================================================================
-   8.speaker bio
-   ========================================================================== */
 
 
 
@@ -495,6 +308,22 @@ main.slide-out .cd-overlay {
   -webkit-animation: cd-fade-in 0.3s;
   animation: cd-fade-in 0.3s;
 }
+
+.video {
+        position:relative;
+        padding-bottom:50%;
+        padding-top:25px;
+        height: 0;
+    }
+
+    .video iframe {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:77%;
+        padding: 0 15px;
+    }
 
 @media only screen and (min-width: 768px) {
 
@@ -862,7 +691,7 @@ footer,
   height: 2px;
   width: 13px;
   background: #d61a0d;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: unset;
   backface-visibility: hidden;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -1133,7 +962,7 @@ footer,
   border-color: #ddd;
   margin-bottom: 1.5em;
   box-shadow: none;
-  padding: 1em 1.5em 1em 3em;
+  padding: 1em 1.5em 1em 0.5em;
 }
 .contact-form h5{
   text-align: left;
@@ -1268,7 +1097,7 @@ footer,
    
 @media (min-width: 768px) {
 
-.section-spacing { padding: 3em 0; }
+.section-spacing { padding: 2.5em  0 15px 0; }
 
 .navbar-default {
   background-color: transparent;
